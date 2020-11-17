@@ -1,0 +1,144 @@
+body{
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.header {
+  background-image: url("https://raw.githubusercontent.com/green-fox-academy/myfirstapp-syllabus/master/assets/first-website-header.png");
+  background-position: center;
+  background-size: cover;
+  width: 1500px;
+  height: 500px;
+  margin:auto;
+  position:relative;
+}
+
+.title p{
+    font-family:'Abril Fatface', cursive;
+    font-size: 35pt;
+    position:absolute;
+    top: 250px;
+    left: 310px;
+}
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  color:black;
+  font-size: 18pt;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.main {
+    width: 850px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    align-items: center;
+}
+.first-block {
+    line-height: 2.5em;
+    text-align: left;
+    width:100%;
+}
+
+.first-list {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18pt;
+    list-style-type: square;
+}
+
+.box-blockquote {
+    height: 175px;
+    width: 1100px;
+    background: #222;
+    text-align: left; 
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    position: relative;  
+}
+
+.blockquote p {
+    color: white;
+    font-family:'Abril Fatface', cursive;
+    font-size: 45pt;
+    padding-left: 25px;
+}
+
+.quote {
+    position: absolute;
+    left: 0px;
+    top: -40px;
+    font-size: 100pt;
+    color: white;
+}
+
+.second-block {
+    text-align: left;
+    width:100%;
+}
+
+.chapter p{
+    font-weight: bold;
+    font-size: 20pt;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.title-main p{
+    font-weight: bold;
+    font-size: 20pt;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.text-main p{
+    font-size: 15pt;
+    line-height: 1.5em;
+}
+
+.third-block {
+    text-align: left;
+    line-height: 1.5em;
+    width:100%;
+}
+
+.lower-title p {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16pt;
+    margin-top: -30px;
+}
+
+.text-main li {
+    font-size: 15pt;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.5em;
+}
+.fourth-block {
+    text-align: left;
+    line-height: 1.5em;
+    width:100%;
+}
+
+hr {
+    color:black;
+    border: none;
+    height: 5px;
+    width: 100%;
+    background-color: black;
+}
+
+.fifth-block {
+    text-align: left;
+    line-height: 1.5em;
+    width:100%;
+}
