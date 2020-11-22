@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objednavka</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="formular">
+        <h1>Order</h1>
+        <form name="formular">
+            <!-- selection of feed -->
+            <h2>Select the type of feed:</h2>
+            <select name="krmivo" id="krmivo" onClick="CenabezKg()">
+                <option value="10">Dog food 10€/kg</option>
+                <option value="4">Cat food 4€/kg</option>
+                <option value="8">Rodents food 8€/kg</option>
+                <option value="10">Fish food 10€//kg</option>
+            </select>
+            <label for="pocet">kg:</label>
+            <input type="text" name="pocet" value="" id="pocet" size="3px" onChange="CenaKg()">
+
+            <label for="cena">Price:</label>
+            <input type="text" name="cena" id="cena" size="8px" onClick="CenaKg()">
+            <p id="warning"></p>
+            <!-- check box for optional properties--------------------------------------------------------->
+            <h2>Select optional properties:</h2>
+
+            <input type="checkbox" id="bio" name="bio" value="0.3" onclick="zobraz();CheckKg()">Bio (+ 30
+            % of original price)<br>
+            <input type="checkbox" id="premium" name="premium" value="0.5" onclick="zobraz();CheckKg()">Extra premium
+            (+ 50 % of original price)<br>
+            <input type="checkbox" id="nekvalita" name="nekvalita" value="-0.15" onclick="zobraz();CheckKg()">unpacked
+            package (-15 % of original price)<br>
+            <input type="checkbox" id="darek" name="darek" value="20" onclick="zobraz();CheckKg()">VIP extra gift
+            (+20€)<br>
+
+            <!-- Radiobuttons for shipment -->
+            <h2>Select shipment:</h2>
+            <input type="radio" id="osobni" name="doprava" value="0" onclick="Doprava();CheckKg()">Personal pick-up
+            (free)<br>
+            <input type="radio" id="kuryr" name="doprava" value="0.1" onclick="Doprava();CheckKg()">Courier (+ 10 % of
+            whole order (including optional properties))<br>
+            <input type="radio" id="posta" name="doprava" value="250" onclick="Doprava();CheckKg()">Czech Post
+            (+10€)<br>
+
+            <!-- Summary price -->
+            <hr>
+            <label for="celkem">Summary price:</label>
+            <input type="text" id="celkem" name="celkem"><br>
+
+            <label for="castka">Customer spend:</label>
+            <input type="text" id="castka" name="castka">
+            <input type="button" value="Check" onclick="kontrola()"><br>
+
+            <label for="email">Email:</label>
+            <INPUT TYPE="text" id="email" SIZE="39" onKeyPress="Email()">
+            gmail.com
+            <hr>
+            <p id="vypis"></p>
+            <div class="submit-box">
+                <input type="button" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

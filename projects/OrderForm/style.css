@@ -1,0 +1,40 @@
+.formular {
+    border: 2px solid black;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    background: lightgray;
+    width: 800px;
+    margin: auto;
+    font-family: 'Poiret One', cursive;
+    font-size: 15pt;
+    font-weight: 900;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+select {
+    font-size: 13pt;
+}
+
+input {
+    border-radius: 5px;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+.submit-box {
+    text-align: center;
+}
+
+.submit-box input {
+    width: 100px;
+}
