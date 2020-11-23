@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-list">
+            <h1>Todo list</h1>
+
+            <div class="todo-input">
+                <ul id="list">
+                    <li>Buy milk</li>
+                </ul>
+            </div>
+            <div class="list">
+                <input type="text" id="todo" size="30px" maxlength = "40">
+            </div>
+            <div class="btn-add">
+                <input type="button" id="add" value="Add">
+            </div>
+
+            <div class="btn-remove">
+                <input type="button" id="remove" value="Remove">
+            </div>
+        </div>
+    </div>
+    <!-- script JS  ----------------------------------------------------------->
+    <script>
+        document.getElementById('add').addEventListener('click', Add);
+        document.getElementById('remove').addEventListener('click', Remove);
+
+        //adding todo as new node / using .appendChild
+        function Add() {
+            let li = document.createElement('li');
+            let InputValue = document.getElementById('todo').value;
+
+            //cannot be empty / condition
+            if (InputValue !== '') {
+                let TodoText = document.createTextNode(InputValue);
+                li.appendChild(TodoText);
+                document.getElementById("list").appendChild(li);
+            }
+            else {
+                alert("it's empty");
+            }
+
+        }
+        //removing lastElementChild from list
+        function Remove() {
+            list = document.getElementById("list");
+            list.removeChild(list.lastElementChild);
+        }
+    </script>
