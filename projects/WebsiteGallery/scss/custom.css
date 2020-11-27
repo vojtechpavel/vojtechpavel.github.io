@@ -1,0 +1,107 @@
+body {
+  font-family: 'Poiret One', cursive;
+  font-weight: 700;
+}
+
+.navbar {
+  font-weight: 400;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.navbar .navbar-brand {
+  font-weight: 700;
+}
+
+.navbar .nav-link {
+  font-weight: 300;
+  font-size: 1.7rem;
+}
+
+.navbar .navbar-brand h1 {
+  font-weight: 100;
+}
+
+.navbar .navbar-brand h3 {
+  font-weight: 900;
+}
+
+.navbar .nav-item {
+  font-size: 1.2rem;
+}
+
+.navbar .nav-link:hover {
+  border-bottom: 1px solid white;
+}
+
+#showcase {
+  background: url(/images/main.jpg) bottom center/cover no-repeat;
+  min-height: 750px;
+  position: relative;
+}
+
+#showcase h1 {
+  line-height: 1;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+#showcase h3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#showcase p {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+#showcase #book {
+  border-radius: 50px;
+  font-size: 1.5rem;
+}
+
+#showcase #popover {
+  border-radius: 50px;
+  font-size: 1.5rem;
+}
+
+#showcase #overlay {
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#showcase #header {
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    background: #1f1f1f;
+  }
+  .navbar .nav-link:hover {
+    border-bottom: none;
+  }
+  #showcase {
+    min-height: 500px;
+  }
+  #showcase h1 {
+    font-size: 1.5rem;
+  }
+  #showcase h3 {
+    font-size: 1.5rem;
+  }
+  #showcase p {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=custom.css.map */
