@@ -220,17 +220,6 @@ p {
 	overflow: hidden;
 	position: relative;
 }
-/* #projects .photo:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-}
-#projects .photo img {
-	transition: .3s ease transform;
-}*/
 
 #projects .myproject:hover .photo img {
 	transform: scale(1.1);
@@ -267,6 +256,12 @@ p {
 	padding: 10px 20px;
 	font-size: 2rem;
 }
+#about .col-right .button:hover {
+	color: white;
+	margin-bottom: 50px;
+	padding: 10px 20px;
+	font-size: 2rem;
+}
 
 /* -----------contact section---------------------------------- */
 #contact .contact {
@@ -288,11 +283,11 @@ p {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	box-shadow: 0px 0px 18px 0 #0000002c;
+	box-shadow: 0px 0px 25px 0 black;
 	transition: .3s ease box-shadow;
 }
 #contact .contact-item:hover {
-	box-shadow: 0px 0px 5px 0 #0000002c;
+	box-shadow: 0px 0px 5px 0 black;
 }
 #contact .icon {
 	width: 70px;
