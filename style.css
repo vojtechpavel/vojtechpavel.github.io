@@ -262,7 +262,6 @@ p {
 }
 #about .col-right .button:hover {
 	color: white;
-	/* margin-bottom: 50px; */
 	padding: 10px 20px;
 	font-size: 2rem;
 }
