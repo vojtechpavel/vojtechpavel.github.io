@@ -212,6 +212,7 @@ p {
 }
 #projects .information p {
 	color: white;
+	font-size: 1.8rem;
 }
 #projects .photo {
 	flex-basis: 50%;  /*zajištění zmenšení fotky vůči velikosti*/
@@ -242,26 +243,30 @@ p {
 	width: 100%;
 }
 #about .col-right h2 {
-	font-size: 1.8rem;
-	font-weight: 500;
+	font-size: 2.2rem;
+	font-weight: 600;
 	letter-spacing: .2rem;
 	margin-bottom: 10px;
 }
 #about .col-right p {
 	margin-bottom: 20px;
+	font-size: 1.8rem;
+	font-weight:500;
 }
 #about .col-right .button {
 	color: black;
-	margin-bottom: 50px;
+	margin-bottom: 69px;
 	padding: 10px 20px;
+	margin-top: 0px;
 	font-size: 2rem;
 }
 #about .col-right .button:hover {
 	color: white;
-	margin-bottom: 50px;
+	/* margin-bottom: 50px; */
 	padding: 10px 20px;
 	font-size: 2rem;
 }
+
 
 /* -----------contact section---------------------------------- */
 #contact .contact {
