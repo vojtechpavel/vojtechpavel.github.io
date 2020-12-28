@@ -212,7 +212,7 @@ p {
 }
 #projects .information p {
 	color: white;
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 }
 #projects .photo {
 	flex-basis: 50%;  /*zajištění zmenšení fotky vůči velikosti*/
@@ -375,7 +375,11 @@ p {
 	#projects .container-project .photo {
 		height: 100%;
 	}
-	
+
+	#projects .information p {
+		color: white;
+		font-size: 1.8rem;
+	}
 
 	/* --------------------About----------------- */
 	#about .about {
@@ -437,7 +441,6 @@ p {
 		font-weight: bold;
 	}
 	
-}
 
 /* media pro PC Desktop */
 @media only screen and (min-width: 1200px) {
