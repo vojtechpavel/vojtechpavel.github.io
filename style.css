@@ -217,15 +217,54 @@ p {
 #projects .photo {
 	flex-basis: 50%;  /*zajištění zmenšení fotky vůči velikosti*/
 	height: 400px;
-	/* border: 3px solid #303030; */
 	overflow: hidden;
 	position: relative;
 }
 
 #projects .myproject:hover .photo img {
-	transform: scale(1.1);
-} 
+	transform: scale(1.05);
+}
 
+#projects .badges img {
+	width: 50px;
+	height: 50px;
+}
+
+#projects .badges {
+	display: flex;
+	margin-bottom: 35px;
+}
+
+.js img:hover,.html5 img:hover,.css3 img:hover,.bootstrap img:hover    {
+	transform: scale(1.2);
+}
+
+/* badges in projects */
+
+.js,.html5,.css3,.bootstrap {
+	position: relative;
+	height: 50px;
+	width: 50px;
+	transition: all 0.2s ease-in-out;
+  }
+
+  .img__description_js,.img__description_html5,.img__description_css3, .img__description_bootstrap   {
+	position: absolute;
+	bottom: 50;
+	background: rgba(29, 106, 154, 0.92);
+	color: #fff;
+	visibility: hidden;
+	opacity: 0;
+	padding: 5px;
+  
+	/* transition effect */
+	transition: opacity .2s, visibility .2s;
+  }
+
+  .js:hover .img__description_js, .html5:hover .img__description_html5, .css3:hover .img__description_css3, .bootstrap:hover .img__description_bootstrap {
+	visibility: visible;
+	opacity: 1;
+  }
 
 /* ------------------------About section -----------------------------------*/
 #about .about {
