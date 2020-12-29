@@ -179,12 +179,14 @@ p {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding-top: 100px;
+	padding-top: 0px;
 	padding-bottom: 0px;
+	min-height: 100vh;
 }
-#projects .project-title h1 {
-	margin-bottom: 50px;
+#projects .projects-title h1 {
+	margin-bottom: 25px;
 }
+
 #projects .container-project {
 	display: flex;
 	align-items: center;
@@ -242,20 +244,20 @@ p {
 	margin-bottom: 35px;
 }
 
-.js img:hover,.html5 img:hover,.css3 img:hover,.bootstrap img:hover    {
+.js-project img:hover,.html5-project img:hover,.css3-project img:hover,.bootstrap-project img:hover,.php-project img:hover,.mysql-project img:hover,.sql-project img:hover, .csharp-project img:hover, .java-project img:hover    {
 	transform: scale(1.2);
 }
 
 /* badges in projects */
 
-.js,.html5,.css3,.bootstrap {
+.js-project,.html5-project,.css3-project,.bootstrap-project {
 	position: relative;
 	height: 50px;
 	width: 50px;
 	transition: all 0.2s ease-in-out;
   }
 
-  .img__description_js,.img__description_html5,.img__description_css3, .img__description_bootstrap   {
+  .img_description_js,.img_description_html5,.img_description_css3, .img_description_bootstrap   {
 	position: absolute;
 	bottom: 50;
 	background: rgba(29, 106, 154, 0.92);
@@ -268,12 +270,17 @@ p {
 	transition: opacity .2s, visibility .2s;
   }
 
-  .js:hover .img__description_js, .html5:hover .img__description_html5, .css3:hover .img__description_css3, .bootstrap:hover .img__description_bootstrap {
+  .js-project:hover .img_description_js, .html5-project:hover .img_description_html5, .css3-project:hover .img_description_css3, .bootstrap-project:hover .img_description_bootstrap {
 	visibility: visible;
 	opacity: 1;
   }
 
 /* ------------------------About section -----------------------------------*/
+#about {
+	height: 90vh;
+	height: 600px;
+}
+
 #about .about {
 	flex-direction: column-reverse;
 	text-align: center;
@@ -312,6 +319,80 @@ p {
 	font-size: 2rem;
 }
 
+#about .container {
+	margin-top: 50px;
+}
+
+/* ------------------------My skills section -----------------------------------*/
+#skills {
+	min-height: 70vh;
+}
+
+#skills .skills {
+	flex-direction: column;
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0px 20px;
+}
+
+#skills .container {
+	min-height: 100vh;
+	width: 100%;
+	margin-top: 100px;
+}
+
+#skills .skill-badges {
+	width: 100%;
+	display: flex;
+	justify-content:space-around;
+	flex-wrap: wrap;
+	padding-top: 10px;
+}
+
+.js-skills img:hover,.html5-skills img:hover,.css3-skills img:hover,.bootstrap-skills img:hover,.php-skills img:hover,.mysql-skills img:hover,.sql-skills img:hover, .csharp-skills img:hover, .java-skills img:hover    {
+	transform: scale(1.2);
+}
+
+.js-skills,.html5-skills,.css3-skills,.bootstrap-skills,.php-skills,.mysql-skills,.sql-skills,.csharp-skills,.java-skills {
+	position: relative;
+	height: 100px;
+	width: 100px;
+	transition: all 0.2s ease-in-out;
+  }
+
+  .img_description_html5-skills,
+  .img_description_css3-skills,
+  .img_description_bootstrap-skills,
+  .img_description_js-skills,
+  .img_description_php-skills,
+  .img_description_mysql-skills,
+  .img_description_sql-skills,
+  .img_description_csharp-skills,
+  .img_description_java-skills   {
+	position: relative;
+	background: rgba(0, 0, 0, 0.92);
+	color: white;
+	visibility: hidden;
+	opacity: 0;
+	padding: 5px;
+	
+	/* transition effect */
+	transition: opacity .2s, visibility .2s;
+  }
+
+  .html5-skills:hover .img_description_html5-skills,
+  .js-skills:hover .img_description_js-skills,
+  .css3-skills:hover .img_description_css3-skills,
+  .bootstrap-skills:hover .img_description_bootstrap-skills,
+  .php-skills:hover .img_description_php-skills,
+  .mysql-skills:hover .img_description_mysql-skills,
+  .sql-skills:hover .img_description_sql-skills,
+  .csharp-skills:hover .img_description_csharp-skills,
+  .java-skills:hover .img_description_java-skills {
+	visibility: hidden;
+	opacity: 1;
+  }
 
 /* -----------contact section---------------------------------- */
 #contact .contact {
@@ -362,6 +443,7 @@ p {
 #contact .container{
 	min-height: 200px;
 	padding-top: 0px;
+	margin-top: 50px;
 }
 
 /* -------------------------------Footer-------------------------------------- */
@@ -388,6 +470,7 @@ p {
 }
 
 /* ---------media pro tablet-------------------- */
+
 @media only screen and (min-width: 768px) {
 	.button {
 		font-size: 2.5rem;
@@ -444,7 +527,7 @@ p {
 	#about .col-right h1 {
 		text-align: left;
 	}
-	
+
 	/* -------------contact---------------  */
 	#contact .contact {
 		flex-direction: column;
@@ -486,8 +569,21 @@ p {
 		line-height: 2rem;
 		font-weight: bold;
 	}
-	
 
+	.html5-skills:hover .img_description_html5-skills,
+.js-skills:hover .img_description_js-skills,
+.css3-skills:hover .img_description_css3-skills,
+.bootstrap-skills:hover .img_description_bootstrap-skills,
+.php-skills:hover .img_description_php-skills,
+.mysql-skills:hover .img_description_mysql-skills,
+.sql-skills:hover .img_description_sql-skills,
+.csharp-skills:hover .img_description_csharp-skills,
+.java-skills:hover .img_description_java-skills   {
+
+  visibility: hidden;
+	
+}
+}
 /* media pro PC Desktop */
 @media only screen and (min-width: 1200px) {
 	
@@ -510,5 +606,23 @@ p {
 	#header .nav ul a:after {
 		display: none;
 	}
-	
+
+	#skills .container {
+		min-height: 600px;
+		margin-top: 0px;
+	}
+
+	.html5-skills:hover .img_description_html5-skills,
+.js-skills:hover .img_description_js-skills,
+.css3-skills:hover .img_description_css3-skills,
+.bootstrap-skills:hover .img_description_bootstrap-skills,
+.php-skills:hover .img_description_php-skills,
+.mysql-skills:hover .img_description_mysql-skills,
+.sql-skills:hover .img_description_sql-skills,
+.csharp-skills:hover .img_description_csharp-skills,
+.java-skills:hover .img_description_java-skills   {
+
+  visibility: visible;
 }
+}
+	
