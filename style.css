@@ -275,6 +275,10 @@ p {
 	opacity: 1;
   }
 
+  #projects .container-project a {
+	  color: white;
+  }
+
 /* ------------------------About section -----------------------------------*/
 #about {
 	height: 90vh;
