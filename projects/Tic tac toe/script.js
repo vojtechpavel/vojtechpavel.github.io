@@ -85,11 +85,15 @@ for (var i = 0; i < boxes.length; i++) {
                 getWinner();
                 choice += 1;
 
+
             } else {
                 this.innerHTML = "O";
                 move.innerHTML = "X - it's your turn!";
                 getWinner();
                 choice += 1;
+            }
+            if (choice === 9) {
+                restart()
             }
         }
     };
