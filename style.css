@@ -244,20 +244,20 @@ p {
 	margin-bottom: 35px;
 }
 
-.js-project img:hover,.html5-project img:hover,.css3-project img:hover,.bootstrap-project img:hover,.php-project img:hover,.mysql-project img:hover,.sql-project img:hover, .csharp-project img:hover, .java-project img:hover    {
+.js-project img:hover,.html5-project img:hover,.css3-project img:hover,.bootstrap-project img:hover,.php-project img:hover,.mysql-project img:hover,.sql-project img:hover, .csharp-project img:hover, .java-project img:hover,.github-project img:hover    {
 	transform: scale(1.2);
 }
 
 /* badges in projects */
 
-.js-project,.html5-project,.css3-project,.bootstrap-project {
+.js-project,.html5-project,.css3-project,.bootstrap-project,.github-project {
 	position: relative;
 	height: 50px;
 	width: 50px;
 	transition: all 0.2s ease-in-out;
   }
 
-  .img_description_js,.img_description_html5,.img_description_css3, .img_description_bootstrap   {
+  .img_description_js,.img_description_html5,.img_description_css3, .img_description_bootstrap,.img_description_github  {
 	position: absolute;
 	bottom: 50;
 	background: rgba(29, 106, 154, 0.92);
@@ -270,7 +270,7 @@ p {
 	transition: opacity .2s, visibility .2s;
   }
 
-  .js-project:hover .img_description_js, .html5-project:hover .img_description_html5, .css3-project:hover .img_description_css3, .bootstrap-project:hover .img_description_bootstrap {
+  .js-project:hover .img_description_js, .html5-project:hover .img_description_html5, .css3-project:hover .img_description_css3, .bootstrap-project:hover .img_description_bootstrap,.github-project:hover .img_description_github {
 	visibility: visible;
 	opacity: 1;
   }
@@ -354,11 +354,11 @@ p {
 	padding-top: 10px;
 }
 
-.js-skills img:hover,.html5-skills img:hover,.css3-skills img:hover,.bootstrap-skills img:hover,.php-skills img:hover,.mysql-skills img:hover,.sql-skills img:hover, .csharp-skills img:hover, .java-skills img:hover    {
+.js-skills img:hover,.html5-skills img:hover,.css3-skills img:hover,.bootstrap-skills img:hover,.php-skills img:hover,.mysql-skills img:hover,.sql-skills img:hover, .csharp-skills img:hover, .java-skills img:hover,.github-skills img:hover    {
 	transform: scale(1.2);
 }
 
-.js-skills,.html5-skills,.css3-skills,.bootstrap-skills,.php-skills,.mysql-skills,.sql-skills,.csharp-skills,.java-skills {
+.js-skills,.html5-skills,.css3-skills,.bootstrap-skills,.php-skills,.mysql-skills,.sql-skills,.csharp-skills,.java-skills,.github-skills {
 	position: relative;
 	height: 100px;
 	width: 100px;
@@ -373,7 +373,8 @@ p {
   .img_description_mysql-skills,
   .img_description_sql-skills,
   .img_description_csharp-skills,
-  .img_description_java-skills   {
+  .img_description_java-skills
+  .img_description_github-skills   {
 	position: relative;
 	background: rgba(0, 0, 0, 0.92);
 	color: white;
@@ -393,7 +394,7 @@ p {
   .mysql-skills:hover .img_description_mysql-skills,
   .sql-skills:hover .img_description_sql-skills,
   .csharp-skills:hover .img_description_csharp-skills,
-  .java-skills:hover .img_description_java-skills {
+  .java-skills:hover .img_description_java-skills,.img_description_github-skills  {
 	visibility: hidden;
 	opacity: 1;
   }
@@ -470,8 +471,56 @@ p {
 }
 
 #footer img {
-	width: 30px;
+	width: 35px;
 }
+
+/* ----------------------- source ----------------------------- */
+.container-source{
+	min-height: 100vh;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#source .copyright {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 20px;
+}
+
+#source h2 {
+	color: white;
+	font-weight: 500;
+	font-size: 1.8rem;
+	letter-spacing: .1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#source .badges {
+	display: flex;
+}
+
+#source .source {
+	min-height: 70px;
+    flex-direction:row;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+#source .badges img {
+	width: 35px;
+	height: 35px;
+}
+
+#source {
+	background-color: #262626;
+}
+
+
 
 /* ---------media pro tablet-------------------- */
 
@@ -582,7 +631,7 @@ p {
 .mysql-skills:hover .img_description_mysql-skills,
 .sql-skills:hover .img_description_sql-skills,
 .csharp-skills:hover .img_description_csharp-skills,
-.java-skills:hover .img_description_java-skills   {
+.java-skills:hover .img_description_java-skills,.img_description_github-skills    {
 
   visibility: hidden;
 	
@@ -624,7 +673,7 @@ p {
 .mysql-skills:hover .img_description_mysql-skills,
 .sql-skills:hover .img_description_sql-skills,
 .csharp-skills:hover .img_description_csharp-skills,
-.java-skills:hover .img_description_java-skills   {
+.java-skills:hover .img_description_java-skills,.img_description_github-skills  {
 
   visibility: visible;
 }
